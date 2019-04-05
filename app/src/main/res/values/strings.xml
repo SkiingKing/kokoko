@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">kokoko</string>
+    <string name="name_of_test">ZNO</string>
+    <string name="english">English</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="statistic">Statistics</string>
+    <string name="math">Math</string>
+    <string name="physics">Physics</string>
+</resources>

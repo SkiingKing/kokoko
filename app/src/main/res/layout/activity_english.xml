@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/topic_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/english"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_topic_subject" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topic_english"
+        tools:listitem="@layout/recycler_list_items" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:background="@android:color/white"
+        android:layout_toRightOf="@+id/rv"
+        android:layout_above="@+id/navigation"
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@android:color/black"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@android:color/black"
+        app:menu="@menu/my_navigation_items" />
+
+</RelativeLayout>
